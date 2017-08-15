@@ -1,0 +1,29 @@
+.profile {
+  text-align: center;
+  width: 200px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.avaliable {
+  color: red;
+}
+
+.wrapper {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.jobCompany {
+  font-size: 15px;
+}
+
+.name {
+  color: blue;
+}
