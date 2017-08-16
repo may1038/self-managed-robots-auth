@@ -9,9 +9,24 @@ app.set("views", "./views")
 app.set("view engine", "mustache")
 app.use(express.static("public"))
 
-app.get("/ohhai", function(request, response) {
+app.get("/users/:id", function(req, res) {
+  const robot = parseInt(req.params.id)
+  let profile = false;
+  for (let i = 0; i < data.users.length; i++) {
+    if (data.users[i].id === robot) {
+      profile = data.users[i]
+    }
+  }
+const dataInfo = data.users
+  res.render("robot", {
+    profile: profile,
+    data: dataInfo
+  })
+})
+
+app.get("/ohhai", function(req, res) {
   const users = data.users
-  response.render("index", {
+  res.render("index", {
     users: users
   })
 })

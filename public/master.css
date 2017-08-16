@@ -7,8 +7,12 @@
   margin-bottom: 20px;
 }
 
-.avaliable {
-  color: red;
+.avatar {
+  width: 75%;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid #c7c7c7;
+  padding: 3px;
 }
 
 .wrapper {
@@ -26,4 +30,42 @@
 
 .name {
   color: blue;
+}
+
+.profileAvatar {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+.profileInfo {
+  width: 500px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.educationSkills {
+  display: flex;
+  width: 500px;
+  height: 100px;
+  margin-left: 80px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.skills {
+  margin-left: 43px;
+}
+
+.profileWrapper {
+  display: flex;
+}
+
+.education-skills-1 {
+  font-weight: bold;
+}
+.education-skills-2 {
+  margin-left: 33px;
+}
+
+a {
+  text-decoration: none;
 }

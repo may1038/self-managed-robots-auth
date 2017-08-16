@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="/master.css">
   <meta charset="utf-8">
   <title></title>
@@ -12,7 +13,7 @@
   {{#users}}
     <div class="profile">
       <img class="avatar" src="{{avatar}}" alt="">
-      <h2 class="name">{{name}}</h2>
+      <a href="/users/{{id}}"><h2 class="name">{{name}}</h2></a>
       <h3 class="jobCompany">
     {{#job}}{{.}}, {{/job}}
     {{^job}}<h3 class="avaliable">Avaliable for hire</h3>{{/job}}

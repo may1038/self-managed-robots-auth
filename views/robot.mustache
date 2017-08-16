@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="/master.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="profileWrapper">
+    <div class="profileAvatar">
+      <img class="avatar" src="{{profile.avatar}}" alt="">
+    </div>
+
+    <div class="profileInfo">
+      <h1>{{profile.name}}</h1>
+      <h3>{{profile.address.city}}, {{profile.address.country}} | {{profile.job}}, {{profile.company}}</h3>
+      <h3>{{profile.email}} | {{profile.phone}}</h3>
+    </div>
+  </div>
+
+  <div class="educationSkills">
+    <div class="education-skills-1">
+      <h3>Education</h3>
+      <div class="skills">
+        <h3>Skills</h3>
+      </div>
+    </div>
+    <div class="education-skills-2">
+    <h3> {{profile.university}}</h3>
+    <h3> {{profile.skills}}</h3>
+  </div>
+  </div>
+
+
+</body>
+
+</html>
