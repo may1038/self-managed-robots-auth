@@ -5,14 +5,7 @@
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
-}
-
-.avatar {
-  width: 75%;
-  height: auto;
-  border-radius: 50%;
-  border: 1px solid #c7c7c7;
-  padding: 3px;
+  box-shadow: 10px 10px 5px #a8a8a8;
 }
 
 .wrapper {
@@ -43,6 +36,19 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.available {
+  color: red;
+}
+
+.avatar {
+  width: 75%;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid #c7c7c7;
+  padding: 3px;
+  box-shadow: 6px 6px 5px #a8a8a8;
+}
+
 .educationSkills {
   display: flex;
   width: 500px;
@@ -68,4 +74,9 @@
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  border-left: 1px solid #a8a8a8;
+  padding-left: 5px;
 }
