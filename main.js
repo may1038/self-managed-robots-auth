@@ -1,7 +1,7 @@
 const express = require("express")
 const data = require("./data")
 const mustacheExpress = require("mustache-express")
-
+const MongoClient = require("mongodb")
 const app = express()
 
 app.engine("mustache", mustacheExpress())
@@ -9,28 +9,26 @@ app.set("views", "./views")
 app.set("view engine", "mustache")
 app.use(express.static("public"))
 
-app.get("/users/:id", function(req, res) {
-  const robot = parseInt(req.params.id)
-  let profile = false;
-  for (let i = 0; i < data.users.length; i++) {
-    if (data.users[i].id === robot) {
-      profile = data.users[i]
-    }
-  }
-const dataInfo = data.users
-  res.render("robot", {
-    profile: profile,
-    data: dataInfo
-  })
-})
+const usersInfo = require("./routes/users")
+app.use(usersInfo)
 
-app.get("/ohhai", function(req, res) {
-  const users = data.users
-  res.render("index", {
-    users: users
-  })
-})
+//this pushes information to the database
 
+// MongoClient.connect(url, function(err, db) {
+//   if (err) {
+//     throw err;
+//   } else {
+//     console.log('Successfully connected to the database');
+//   }
+//   for (var i = 0; i < data.users.length; i++) {
+//     const user = data.users[i];
+//     db.collection("users").updateOne(
+//       {id: user.id},
+//       user,
+//       {upsert: true}
+//     )
+//   }
+// })
 
 
 app.listen(3000, function() {

@@ -10,15 +10,16 @@
 </head>
 
 <body>
+  {{#user}}
   <div class="profileWrapper">
     <div class="profileAvatar">
-      <img class="avatar" src="{{profile.avatar}}" alt="">
+      <img class="avatar" src="{{avatar}}" alt="">
     </div>
 
     <div class="profileInfo">
-      <h1>{{profile.name}}</h1>
-      <h3>{{profile.address.city}}, {{profile.address.country}} | {{profile.job}}, {{profile.company}}</h3>
-      <h3>{{profile.email}} | {{profile.phone}}</h3>
+      <h1>{{name}}</h1>
+      <h3>{{address.city}}, {{address.country}} | {{job}}, {{company}}</h3>
+      <h3>{{email}} | {{phone}}</h3>
     </div>
   </div>
 
@@ -30,12 +31,12 @@
       </div>
     </div>
     <div class="education-skills-2">
-    <h3> {{profile.university}}</h3>
-    <h3> {{profile.skills}}</h3>
+    <h3> {{university}}</h3>
+    <h3> {{skills}}</h3>
   </div>
   </div>
 
-
+  {{/user}}
 </body>
 
 </html>

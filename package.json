@@ -3,15 +3,25 @@
   "version": "1.0.0",
   "main": "data.js",
   "scripts": {
+    "start": "nodemon main.js -e js,mustache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4",
+    "mongodb": "^2.2.31",
     "mustache": "^2.3.0",
     "mustache-express": "^1.2.5"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/may1038/create-a-user-directory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/may1038/create-a-user-directory/issues"
+  },
+  "homepage": "https://github.com/may1038/create-a-user-directory#readme",
   "description": ""
 }
