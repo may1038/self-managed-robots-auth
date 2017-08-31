@@ -19,7 +19,7 @@ let sess = {
   saveUninitialized: true,
   resave: true
 }
-
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(session(sess))
 
 const url = "mongodb://127.0.0.1:27017/robots"
